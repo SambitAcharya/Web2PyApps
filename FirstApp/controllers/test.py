@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
 # try something like
-def index(): 
-    return dict(message="hello from test.py")
+def index():
+    import cgi
+    x = request.vars
+    return "<html><body><h1> %s </h1></body></html>" %cgi.escape(str(x))
