@@ -1,5 +1,4 @@
 def index():
-    session.a = 3
     session.a =session.a+ 1
     message = "a = %s" %session.a
     return locals()

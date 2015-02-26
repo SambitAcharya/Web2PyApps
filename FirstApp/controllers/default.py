@@ -1,7 +1,8 @@
 def index():
-    session.a =session.a+ 1
-    message = "a = %s" %session.a
-    return locals()
+    redirect(URL('other'))
+    
+def other():
+    return 'This is other page'
 
 
 def user():
