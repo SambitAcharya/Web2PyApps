@@ -1,5 +1,7 @@
 def index():
-    return dict(message=T('Hello World'))
+    session.a =session.a+ 1
+    message = "a = %s" %session.a
+    return locals()
 
 
 def user():
